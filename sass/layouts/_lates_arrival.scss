@@ -108,22 +108,27 @@
         font-family: 'Work sans', sans-serif;
         color: $thirdColor;
         @include font_1($fs: 2.5rem, $fw: 600, $lh: 6rem);
+        
     }
     &__right{
         width: 11.2rem;
         @include flex-row($jc: center);
         gap: 1rem;
-        span {
+        span{
             width: 2.4rem;
             height: 2.5rem;
             border: 0.8px solid #A5A9B3;
             text-align: center;
-            &:nth-child(1){
-                border: none    ;
-            }
             p{
                 @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+                margin-left: .2rem;
             }
+            
+        }
+        p{
+            margin-right: 25rem;
+            color: $pcolor;
+            @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
         }
     }
 }

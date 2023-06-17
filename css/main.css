@@ -33,6 +33,8 @@ button {
 
 .under {
   text-decoration: line-through;
+  border: none;
+  color: red;
 }
 
 header {
@@ -344,11 +346,16 @@ hr {
   text-align: center;
 }
 
-.latesarrival__cards__card__text__stars__price__right span:nth-child(1) {
-  border: none;
+.latesarrival__cards__card__text__stars__price__right span p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  margin-left: .2rem;
 }
 
-.latesarrival__cards__card__text__stars__price__right span p {
+.latesarrival__cards__card__text__stars__price__right p {
+  margin-right: 25rem;
+  color: #707686;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.1rem;
