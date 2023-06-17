@@ -1,0 +1,33 @@
+@mixin felx{
+    display: flex;
+    align-items: center;
+}
+@mixin flex-row($jc: space-between){
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: $jc;
+}
+@mixin flex-column($jc: space-between){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: $jc;
+}
+
+@mixin font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+@mixin font_h1($fs: 5rem, $fw: 500, $lh: 6rem){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin btn{
+    padding: 1.1rem 3rem;
+    border-radius: 3.8rem;
+    background-color: $btnbg_color;
+}

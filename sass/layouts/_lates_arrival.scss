@@ -1,0 +1,129 @@
+.latesarrival {
+    width: 100%;
+    margin: 7.2rem 0;
+}
+
+.latesarrival__boxs {
+    width: 100%;
+    @include flex-row($jc: space-between);
+    gap: 10.5rem;
+
+    &__box {
+        width: 15.7rem;
+        height: 15rem;
+        @include flex-column;
+    }
+
+    .image {
+        width: 50%;
+        height: 40%;
+    }
+    h1 {
+        font-family: "Work Sans", sans-serif;
+        color: $h1Color;
+        @include font_1($fs: 1.8rem, $fw: 800, $lh: 2.1rem);
+    }
+    p {
+        color: $pcolor;
+        @include font_1($fs: 1.6rem, $fw: 300, $lh: 2.5rem);
+    }
+}
+.latesarrival__txt-2 {
+    margin: 6.1rem 0;
+
+    h1 {
+        font-family: 'Outfit', sans-serif;
+        @include font_h1($fs: 5rem, $fw: 500, $lh: 6rem);
+        color: $h1Color;
+    }
+    p {
+        font-family: 'work sans', sans-serif;
+        color: $pcolor;
+        @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+    }
+}
+.latesarrival__cards {
+    @include flex-row;
+    &__card {
+      width: 25.5rem;
+      height: 42rem;
+      border-radius: .4rem;
+      @include flex-column($jc: flex-start);
+
+      gap: 1.5rem;
+      align-items: baseline;
+      &__img {
+        width: 100%;
+        height: 33rem;
+        @include flex-row($jc: center);
+        $globalColor: #F7F8FC;
+        background: $globalColor;
+        &__top{
+            position: absolute;
+            margin-top: -21rem;
+            width: 22rem;
+            @include flex-row;
+            span{
+                color: $fourthColor;
+                background: $btnbg_color;
+                width: 3.8rem;
+                height: 1.7rem;
+                font-family: 'Outfit', sans-serif;
+                @include font_1($fs: 1.2rem, $fw: 300, $lh: 2.5rem);
+                @include felx;
+                 justify-content: center;
+                &:nth-child(2){
+                    background: $secondaryColor;
+                }
+            }
+        }
+      }
+      &__text {
+        width: 100%;
+        @include flex-column($jc: flex-start);
+        h1{
+            font-family: 'Work sans', sans-serif;
+            @include font_h1($fs: 2.2rem, $fw: 500, $lh: 6rem);
+            margin-right: 6.6rem;
+          }          
+        &__stars {
+          @include flex-row($jc: flex-start);
+          width: 100%;
+          gap: 1.9rem;
+          &__txt {
+            p {
+              font-family: 'work sans', sans-serif;
+              color: $pcolor;
+              @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+            }
+          }
+        }
+      }
+    }
+  }
+.latesarrival__cards__card__text__stars__price{
+    width: 100%;
+    @include flex-row;
+    p{
+        font-family: 'Work sans', sans-serif;
+        color: $thirdColor;
+        @include font_1($fs: 2.5rem, $fw: 600, $lh: 6rem);
+    }
+    &__right{
+        width: 11.2rem;
+        @include flex-row($jc: center);
+        gap: 1rem;
+        span {
+            width: 2.4rem;
+            height: 2.5rem;
+            border: 0.8px solid #A5A9B3;
+            text-align: center;
+            &:nth-child(1){
+                border: none    ;
+            }
+            p{
+                @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+            }
+        }
+    }
+}
