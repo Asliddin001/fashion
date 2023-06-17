@@ -1,0 +1,76 @@
+.productbg{
+    width: 100%;
+    $globalColor: #F6F8FA;
+    background: $globalColor;
+}
+.product{
+    width: 100%;
+    @include pad; 
+    @include flex-row;
+    align-items: flex-start;
+    gap: 1rem;
+    &__txt{
+        @include flex-column;
+        align-items: first baseline;
+        gap: 1rem;
+        span{
+            font-family: 'Outfit', sans-serif;
+            @include font_1($fs: 2rem, $fw: 400, $lh: 6rem);
+            color: $btnbg_color;
+        }
+        h1{
+            font-family: 'Outfit', sans-serif;
+           @include font_h1($fs: 5rem, $fw: 500, $lh: 6rem);
+        }
+        p{
+            color: $pcolor;
+            font-family: 'work sans', sans-serif;
+            @include font_1($fs: 1.8rem, $fw: 300, $lh: 2.8rem);
+        }
+        &__btn{
+            width: 100%;
+            @include flex-row($jc: none);
+            gap: 7.2rem;
+            &__left{
+                @include flex-row;
+                gap: 1rem;
+                h2{
+                    @include font_h1($fs: 5rem, $fw: 500, $lh: 6rem);
+                    color: $btnbg_color;
+                    font-family: 'outfit', sans-serif;
+                }
+            }
+            span{
+               
+                button{
+                    padding: 1.1rem 3.6rem;
+                    background: $btnbg_color;
+                    color: $fourthColor;
+                    font-family: 'outfit', sans-serif;
+                    @include font_1($fs: 1.8rem, $fw: 400, $lh: 2.1rem);
+                    border-radius:  3.8rem;
+                }
+            }
+        }
+        &__clock{
+            @include flex-row($jc: baseline);
+            width: 100%;
+            gap: 1rem;
+            span{
+                color: $h1Color;
+                }
+            &__borders{
+                width: 8.3rem;
+                height: 8.3rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $fourthColor;
+                border-radius: 50%;
+                
+            }
+        }
+    }
+}
+

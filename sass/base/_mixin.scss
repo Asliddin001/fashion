@@ -31,3 +31,7 @@
     border-radius: 3.8rem;
     background-color: $btnbg_color;
 }
+
+@mixin pad{
+    padding: 9.5rem 0;
+}
