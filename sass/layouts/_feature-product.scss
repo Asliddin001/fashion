@@ -1,0 +1,184 @@
+.feature-product{
+    width: 100%;
+    @include pad;
+    @include flex-column;
+    &__txtl{
+        h1{
+            font-family: 'outfit', sans-serif;
+            @include font_h1($fs: 5rem, $fw: 400, $lh: 6rem);
+        }
+        p{
+            font-family: 'work sans', sans-serif;
+            color: $pcolor;
+            @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+        }
+    }
+    &__txtr{
+        width: 48.9rem;
+          @include flex-row;
+        justify-content: space-between; 
+        span{
+            @include font_1($fs: 2.6rem, $fw: 300, $lh: 6rem);
+        font-family: 'outfit', sans-serif;
+        }
+    }
+}
+.feature-product__txt{
+    width: 100%;
+    @include flex-row($jc: space-between);
+    align-items: end;
+}
+.feature-product__cards1{
+    @include flex-column;
+    gap: 6rem;
+    border: solid red
+}
+.feature-product__cards {
+    @include flex-row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    &__card {
+      width: 25.5rem;
+      height: 42rem;
+      border-radius: .4rem;
+      @include flex-column($jc: flex-start);
+      gap: 1.5rem;
+      align-items: baseline;
+      &__img {
+        width: 100%;
+        height: 40rem;
+        @include flex-row($jc: center);
+        $globalColor: #F7F8FC;
+        background: $globalColor;
+        &__top{
+            position: absolute;
+            margin-top: -21rem;
+            width: 22rem;
+            @include flex-row;
+            gap: 12rem;
+            .sale{
+                order: 2;
+            }
+            .none{
+                display: inline;
+                width: 0;
+                color: transparent;
+            }
+            span{
+                color: $fourthColor;
+                background: $btnbg_color;
+                width: 3.8rem;
+                height: 1.7rem;
+                font-family: 'Outfit', sans-serif;
+                @include font_1($fs: 1.2rem, $fw: 300, $lh: 2.5rem);
+                @include felx;
+                 justify-content: center;
+                &:nth-child(2){
+                    background: $secondaryColor;
+                }
+            }
+        }
+      }
+      &__text {
+        width: 100%;
+        @include flex-column($jc: flex-start);
+        h1{
+            font-family: 'Work sans', sans-serif;
+            @include font_h1($fs: 2.2rem, $fw: 500, $lh: 6rem);
+            margin-right: 6.6rem;
+          }     
+          .d255{
+            width: 100%;
+            @include flex-row($jc: flex-start);
+          .d25{
+            font-family: 'Work sans', sans-serif;
+            color: $thirdColor;
+            @include font_1($fs: 2.5rem, $fw: 600, $lh: 6rem); 
+            margin-right: 20rem;
+        }
+        .under{
+            margin-left: -19rem;
+            @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+            color: $pcolor;
+        }
+    }
+        p{
+            font-family: 'Work sans', sans-serif;
+            color: $thirdColor;
+            @include font_1($fs: 2.5rem, $fw: 600, $lh: 6rem);   
+        }
+        &__stars {
+          @include flex-row($jc: flex-start);
+          width: 100%;
+          gap: 1.9rem;
+          &__txt {
+            p {
+              font-family: 'work sans', sans-serif;
+              color: $pcolor;
+              @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+            }
+          }
+        }
+      }
+    }
+  }
+.feature-product__cards__card__text__stars__price{
+    width: 100%;
+    @include flex-row;
+    .colorrow{
+        width: 50%;
+        height: 2rem;
+        @include flex-row($jc: flex-start);
+        align-items: end;
+        margin-left: 2rem;
+        gap: 2rem;
+    .color{
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 50%;
+        margin-left: -1rem;
+    }
+    .color-1{
+        background: #2ED0E7;
+    }
+    .color-2{
+        background: #C399AD;
+    }
+    .color-3{
+        background: #040404;
+    }
+    .color-4{
+        background: #BA2828;
+    }
+    .color-5{
+        background: #E2C048;
+    }
+    .color-6{
+        background: #040404;
+    }
+    .color-7{
+        background: #E5D4D1;
+    }
+}
+    &__right{
+        width: 11.2rem;
+        @include flex-row($jc: center);
+        gap: 1rem;
+        span{
+            width: 2.4rem;
+            height: 2.5rem;
+            border: 0.8px solid #A5A9B3;
+            border-radius: 0.2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            p{
+                @include font_1($fs: 1.8rem, $fw: 500, $lh: 2.1rem);
+                margin-left: .2rem;
+            }
+            
+        }
+         
+    }
+}
